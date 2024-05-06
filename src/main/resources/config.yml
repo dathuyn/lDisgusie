@@ -1,0 +1,158 @@
+# iDisguise v1.0.1 made for AcentraMC
+# Developers:
+# - lrxh
+# - rosebudcat
+# - DanPlayz
+# - DatxCute
+
+# Interval between each automatic config reload (seconds)
+# Reload process is done asynchronously, but a higher number should reduce stressing the system
+# Changing this value will have an effect on the plugin on the next reload.
+# Default: 60s (~ 1 minute)
+reload-interval: 60
+
+
+
+# Add names of staff here
+staff: [lrxh_, rosebudcat, Memesalot, HoneyyXD, Pn57, Dvm0n, ShonBom, Squesly, beenchilling, 53773, Qvies, Kqni, DanPlayz]
+
+# Add names of media ranks here
+media: []
+
+# List of nicknames you want to block
+forbiddenNames:
+  - DatxCute
+  - DocMonke
+  - ShonBom
+  - ShootThePoop
+  - prodgk
+  - oCritical
+  - oTxm
+  - vctiim
+  - Scorpay
+  - ilyRein
+  - Prashant_Gamer
+  - ReactiveTiara53
+  - _iDev
+  - squeezebenz_
+  - Kyoonzy
+  - Clb7
+  - Reduceds
+  - FidgetFlame
+  - Memesalot
+  - idontcarebro
+  - 53773
+  - CallenMC
+  - Honey
+  - Drousied
+  - OPCycloneHvN
+  - C0CKDisabler
+  - TSJenesis
+  - Squesly
+  - NeverStartTrying
+
+# help disguise
+help-messages:
+  header: "&7==================================="
+  title: "&d■ &8&l[&eDisguise Core&8&l]&f - Help Command"
+  commands:
+    - ""
+    - "&a• &e/disguise&f - Randomly a name you will disguise"
+    - "&a• &e/disguise-gui&f - Open the gui interface"
+    - "&a• &e/disguise-unset&f - Cancel disguise"
+    - "&a• &e/disguise-list&f - Check the list of people who are disputing the page"
+    - "&a• &e/disguise-reveal <player>&f - Check who the players are"
+    - "&a• &e/disguise-rank&f - Open the feature interface"
+  footer: "&7========================="
+
+# help nickname
+
+help-messages-nick:
+  header: "&7==================================="
+  title: "&d■ &8&l[&eDisguise Core&8&l]&f - Help Command"
+  commands:
+    - ""
+    - "&a• &e/nick&f - Change your nick name random"
+    - "&a• &e/nick <text>&f - Change your nick name"
+    - "&a• &e/nick-unset&f - Remove nickname"
+    - "&a• &e/nick-list&f - Check which players are using nick command"
+    - "&a• &e/realname <player>&f - Check the player's real name"
+    - "&a• &e/nick-reset <player>&f - Reset nickname for users"
+  footer: "&7========================="
+
+#message listener
+
+messages:
+  no-permission-disguise-args: "&8[&eDisguise Core&8]&c You don't have permission to use disguise with arguments."
+  blacklist-disguise: "&8[&eDisguise Core&8]&c You are not allowed to use this disguise. &7-> &8(&a%disguiseName%&8)"
+  already-disguised: "&8[&eDisguise Core&8]&a You are already disguised"
+  cannot-disguise-while-nicked: "&8[&eDisguise Core&8]&c You cannot use disguise while using /nick"
+  blacklisted-name: "&8[&eDisguise Core&8]&c Sorry but this name is omitted from being used"
+  no-one-disguised: "&8[&eDisguise Core&8]&c No one is disguised!"
+  disguised-player-entry: "&8[&eDisguise Core&8]&f Player &6%s &fwith the&d Disguise &a%s "
+  missing-player-name: "&8[&eDisguise Core&8]&c Please provide a player name!"
+  reset-self: "&8[&eDisguise Core&8]&c You cannot reset yourself!"
+  player-not-exist: "&8[&eDisguise Core&8]&c Player does not exist!"
+  player-not-disguised: "&8[&eDisguise Core&8]&c Player is not disguised!"
+  no-player-name: "&8[&eDisguise Core&8]&c Please provide a player name!"
+  cannot-reveal-yourself: "&8[&eDisguise Core&8]&c You cannot reveal yourself!"
+  no-permission-nick-args: "&8[&eDisguise Core&8]&c You don't have permission to use nicknames with arguments."
+  blacklist-nickname: "&8[&eDisguise Core&8]&c You are not allowed to use this nickname. &f-> &8(&a %nickName% &8)"
+  disguise-while-nicked: "&8[&eDisguise Core&8] &cYou can not disguise while nicked!"
+  already-nicked: "&8[&eDisguise Core&8] &cYou are already nicked!"
+  blacklisted-names: "&8[&eDisguise Core&8] &cSorry but this name is omitted from being used"
+  nick-list: "&cList of all players using nicked: &7(&c%d&7)"
+  nick-entry: "&8[&eDisguise Core&8]&f Player &6%s &fwith the nickname &c%s &7(nick)"
+  error-disguised: "&8[&eDisguise Core&8]&c You can not run this command while disguised!"
+  error-not-nicked: "&8[&eDisguise Core&8]&c You are not nicked!"
+  player-not-nicked: "&8[&eDisguise Core&8]&c Player is not nicked!"
+  nick-reset: "&8[&eDisguise Core&8] &fPlayer &c%s &fhas returned with real name &a%s"
+  reset-nickname: "&8[&eDisguise Core&8]&f Your nickname has been reset &a%s"
+  disguised-player-entrys: "&8[&eDisguise Core&8]&f Player &c%s &fis nicked as &a%s"
+  player-only: "&8[&eDisguise Core&8] &cOnly players can use this command."
+  no-permission: "&8[&eDisguise Core&8]&c I'm sorry but you don't have permission to use this command."
+  no-one-nicked: "&8[&eDisguise Core&8]&c No one is nicked!"
+
+
+# disguise menu gui
+menu:
+  title: "&8[ &e&lDisguise&8 ] &f&lDisguise Control"
+  items:
+    disguise:
+      material: NETHER_STAR
+      display_name: "&8&l[ &e&lDisguise&8&l ]&f Random Name"
+      lore:
+        - ""
+        - "&f &7Click to random disguise player"
+    nickname:
+      material: NAME_TAG
+      display_name: "&8&l[ &e&lDisguise&8&l ]&f Random NickName"
+      lore:
+        - ""
+        - "&f &7Click to random nickname player"
+    rank_change:
+      material: DIAMOND
+      display_name: "&8&l[ &e&lDisguise&8&l ]&f Rank Change"
+      lore:
+        - ""
+        - "&f &7Click to change rank player"
+  glass_material: STAINED_GLASS_PANE
+
+menurank:
+  title: "&8[ &0&lDisguise&8 ] &0&lRank Change"
+prefixess:
+  Premiums: "&f&8&l[&2Premium&8&l]&2 "
+  Heros: "&f&8&l[&3Hero&8&l]&3 "
+  Elites: "&f&8&l[&aElite&8&l]&a "
+  Supremes: "&f&8&l[&6Supreme&8&l]&6 "
+  Acentras: "&f&8&l[&eAcentra&8&l]&e "
+  NoRanks: "&7"
+  HelpGuis: "&f &8&l[&7 Disguise&8&l ]&f "
+lores:
+  - ""
+  - "&f &7Click to select"
+helpguiLores:
+  - ""
+  - "&8[&c+&8]&7 is a feature that helps you"
+  - "&f &7change your rank in the game but the"
+  - "&f &7  benefits remain the same"

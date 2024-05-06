@@ -1,0 +1,37 @@
+main: dev.acentra.disguise.DisguisePlugin
+name: lDisguise
+version: 1.0.1
+description: Disguise Plugin made for AcentraMC
+authors:
+  - lrxh
+  - rosebudcat
+  - DanPlayz
+  - DatxCute
+depend:
+  - PlaceholderAPI
+  - ProtocolLib
+commands:
+  disguise:
+    aliases: [dis, d]
+  undisguise:
+    aliases: [disguise-unset]
+  disguiselist:
+    aliases: [disguise-list]
+  resetdisguise:
+    aliases: [disguise-reset]
+  revealdisguise:
+    aliases: [disguise-reveal]
+  nick:
+    aliases: [nick]
+  unnick:
+    aliases: [nick-unset]
+  nicklist:
+    aliases: [nick-list]
+  resetnick:
+    aliases: [nick-reset]
+  revealnick:
+    aliases: [realname]
+  rankchange:
+    aliases: [disguise-rank]
+  disgusiemenu:
+    aliases: [disguise-gui]
