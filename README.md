@@ -45,7 +45,6 @@ This plugin was created to handle camouflage and pseudonymization in Acentra. A 
 ### Runtime Requirements
 - Java 8 or above
 - Spigot 1.8 or above, or equivalent forks
-- Nick-API v.6.5.3 
 - PlaceholderAPI 2.11.2 or above
 - Permission plugin, preferably LuckPerms or PermissionsEX
 
