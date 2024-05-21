@@ -1,8 +1,5 @@
 # iDisguise v1.0.1 made for AcentraMC
 # Developers:
-# - lrxh
-# - rosebudcat
-# - DanPlayz
 # - DatxCute
 
 # Interval between each automatic config reload (seconds)
@@ -14,7 +11,7 @@ reload-interval: 60
 
 
 # Add names of staff here
-staff: [lrxh_, rosebudcat, Memesalot, HoneyyXD, Pn57, Dvm0n, ShonBom, Squesly, beenchilling, 53773, Qvies, Kqni, DanPlayz]
+staff: []
 
 # Add names of media ranks here
 media: []
@@ -22,34 +19,6 @@ media: []
 # List of nicknames you want to block
 forbiddenNames:
   - DatxCute
-  - DocMonke
-  - ShonBom
-  - ShootThePoop
-  - prodgk
-  - oCritical
-  - oTxm
-  - vctiim
-  - Scorpay
-  - ilyRein
-  - Prashant_Gamer
-  - ReactiveTiara53
-  - _iDev
-  - squeezebenz_
-  - Kyoonzy
-  - Clb7
-  - Reduceds
-  - FidgetFlame
-  - Memesalot
-  - idontcarebro
-  - 53773
-  - CallenMC
-  - Honey
-  - Drousied
-  - OPCycloneHvN
-  - C0CKDisabler
-  - TSJenesis
-  - Squesly
-  - NeverStartTrying
 
 # help disguise
 help-messages:
