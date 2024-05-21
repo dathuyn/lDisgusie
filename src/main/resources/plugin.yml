@@ -3,9 +3,6 @@ name: lDisguise
 version: 1.0.1
 description: Disguise Plugin made for AcentraMC
 authors:
-  - lrxh
-  - rosebudcat
-  - DanPlayz
   - DatxCute
 depend:
   - PlaceholderAPI
