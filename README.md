@@ -7,10 +7,6 @@
 
 <hr>
 
-### Introduction
-This plugin was created to handle camouflage and pseudonymization in Acentra. A better version.
-<hr>
-
 ### Features
 - Blacklist system (config.yml)
 - Disguise API with Bukkit Events
